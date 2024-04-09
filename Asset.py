@@ -1,7 +1,6 @@
 import numpy as np
-seed = 0
-global_rng = np.random.default_rng(seed)
-const_num_day_year = 100 #252
+from CalibrateParameters import global_rng, const_num_day_year
+
 
 def genSBM(t, dt):
     dt = min(t,dt)
